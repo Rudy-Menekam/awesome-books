@@ -5,11 +5,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* body {
-  display: flex;
-  flex-direction: column;
-} */
-
 .flex {
   display: flex;
   justify-content: space-between;
@@ -148,4 +143,11 @@ li a {
 
 #book-section {
   padding-top: 20%;
+}
+
+#date {
+  margin: 10px 13px 11px auto;
+  height: 19px;
+  display: flex;
+  justify-content: flex-end;
 }

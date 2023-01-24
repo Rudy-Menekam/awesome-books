@@ -1,5 +1,6 @@
-import '/modules/web_navigation.js'
+import {overlay, menuBtn, navList} from '/modules/web_navigation.js'
 import {bookContainer, g} from '/modules/library.js'
+import {Time} from '/modules/time.js'
 
 
 bookContainer.addEventListener('click', (e) => {
@@ -10,3 +11,6 @@ bookContainer.addEventListener('click', (e) => {
 });
 
 document.querySelector('.addBtn').addEventListener('click', g.addBook);
+Time.now();
+menuBtn.addEventListener('click', overlay);
+navList.addEventListener('click', overlay);

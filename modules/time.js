@@ -1,8 +1,8 @@
 import { DateTime } from './luxon.js';
 
-class Time {
+export class Time {
     static now = () => {
-      const timeElement = document.getElementById('time');
+      const timeElement = document.getElementById('date');
       const currentTime = DateTime.now();
       const formatt = DateTime.DATETIME_MED_WITH_SECONDS;
       timeElement.innerHTML = currentTime.toLocaleString(formatt);
@@ -11,5 +11,4 @@ class Time {
     }
   }
   
-  export default Time;
   
